@@ -1,0 +1,18 @@
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: .8% 5%;
+    text-align: center;
+}
+
+th {
+    background-color: rgba(54, 155, 20, 0.81);
+    font-weight: 900;
+    font-size: 18px;
+}

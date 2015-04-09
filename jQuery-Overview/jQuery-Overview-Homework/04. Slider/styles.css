@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#slider {
+    width: 100%;
+    /*width: 1920px;*/
+    height: 500px;
+    overflow: hidden;
+}
+
+#slider .sliders {
+    display: inline-block;
+    width: 300%;
+    /*width: 15000px;*/
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    display: none;
+    float: left;
+    list-style-type: none;
+    width: 1366px;
+    /*width: 1920px;*/
+    height: 500px;
+    transition: all .5s linear ;
+}
+
+.current, .previous, .next {
+    /*position: absolute;*/
+    display: inline-block !important;
+}
+
+.current {
+    left: 0;
+}
+
+.previous {
+    left: -100%;
+}
+
+.next {
+    left: 100%;
+}
+
+#slideOne {
+    background-image: url("images/picture1.jpg");
+}
+
+#slideTwo {
+    background-image: url("images/picture2.jpg");
+}
+
+#slideThree {
+    background-image: url("images/picture3.jpg");
+}
+
+#slideFour {
+    background-image: url("images/picture4.jpg");
+}
+
+#slideFive {
+    background-image: url("images/picture5.jpg");
+}
+
+#slideSix {
+    background-image: url("images/picture6.jpg");
+}
+
+.slide-header, .slide-article {
+    width: 100%;
+}
+
+.text {
+    color: white;
+    font-weight: 300;
+    font-family: Courier New, monospace;
+    font-size: 44px;
+    line-height: 52px;
+
+    text-align: center;
+    margin-top: 8%;
+}
+
+.apply-button {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #fefefe;
+    padding: 1% 3%;
+    border-radius: 5%;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 13%;
+    display: block;
+    width: 6%;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.slideshowButton {
+    position: absolute;
+    top: 225px;
+    width: 59px;
+    height: 59px;
+    opacity: .6;
+    transition: opacity 0.3s ease;
+}
+
+.slideshowButton:hover {
+    opacity: 1;
+}
+
+.buttonPrevious {
+    left: 5%;
+    background-image: url("images/sliderArrows.png");
+}
+
+.buttonNext {
+    right: 5%;
+    background-position: 59px 0;
+    background-image: url("images/sliderArrows.png");
+}
+
+@media screen and (min-width: 1367px){
+    /*.previousSlide {*/
+    /*left: 31%;*/
+    /*}*/
+
+    /*.nextSlide {*/
+    /*right: 31%;*/
+    /*}*/
+
+    #slider .slide {
+        width: 1920px;
+        /*width: 1920px;*/
+    }
+
+    .apply-button {
+        width: 4%;
+        margin-top: 7%;
+    }
+}

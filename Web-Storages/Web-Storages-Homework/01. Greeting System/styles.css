@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#greeting-container {
+    text-align: center;
+    margin: 5% 0;
+}
+
+#text {
+    font-size: 44px;
+    color: #7a7cff;
+}
+
+.visits {
+    font-size: 26px;
+    color: #636363;
+    margin-top: 2%;
+}
+
+.counter {
+    font-size: 50px;
+    color: orange;
+    vertical-align: sub;
+}

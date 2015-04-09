@@ -1,0 +1,49 @@
+main {
+    border: 1px solid black;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    font-size: 18px;
+}
+
+.option-form {
+    width: 50%;
+    display: inline-block;
+}
+
+.block-section {
+    margin: 2% 4% 4% 0;
+}
+
+.block-section > label{
+    margin-right: 2.5%;
+}
+
+input[type='color'] {
+    width: 40%;
+}
+
+button {
+    margin: 1% 0 0 23%;
+    width: 90px;
+    height: 25px;
+}
+
+ul {
+    width: 35%;
+    margin-top: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bird {
+    background-color: #62c3ff;
+    padding-left: 2%;
+}
+
+.info {
+    margin-top: 2%;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
