@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main-wrapper {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#main-header, #town-header {
+    background-color: #3B3B3B;
+    color: white;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+}
+
+.header-text {
+    padding: 3% 0;
+}
+
+#country-list, #towns-list {
+    list-style: none;
+}
+
+.country, .town {
+    border: 1px solid grey;
+    background-color: #F1F1F1;
+    padding: 1.7% 0;
+    font-size: 18px;
+}
+
+.country:hover, .town:hover {
+    cursor: pointer;
+}
+
+.selected-country, .selected-town {
+    background-color: #3B3B3B;
+    color: white;
+}
+
+.country:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#countries-options {
+    padding: 0;
+    background-color: #19B2A9;
+}
+
+.option-button {
+    width: 34%;
+    margin: 0 -0.4%;
+    padding: 1.5% 0;
+    border: 1px solid black;
+    background-color: #19B2A9;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all .15s ease-in-out;;
+}
+
+.option-button:hover {
+    cursor: pointer;
+    background-color: rgba(27, 155, 145, 0.96);
+}
+
+#add-country-input {
+    width: 98%;
+    padding: 1.7% 1%;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+#add-country-input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+
+#edit-box, #edit-town-box {
+    visibility: visible;
+}
+
+#edit-country-text-input, #edit-town-text-input {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+    padding: .5% 0;
+    color: black;
+}
+
+#edit-box, #edit-town-box {
+    display: none;
+}
+
+#aside-towns {
+    width: 22%;
+    border: 1px solid #000000;
+    position: fixed;
+    display: inline-block;
+    top: 31%;
+    right: 6%;
+    text-align: center;
+    border-radius: 6px;
+    visibility: hidden;
+}
+
+#town-header > h1 {
+    font-size: 20px;
+    padding: 1.8% 0;
+}
+
+#towns-options > * {
+    font-size: 13px;
+    padding: 1.4% 0;
+}
+
+#add-town-input {
+    width: 98%;
+    padding: 1.7% .5%;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    margin: 1% 0;
+    font-weight: 700;
+}
+
+#add-town-input::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+#add-town-input::-webkit-input-placeholder {
+    font-size: 13px;
+    font-weight: 500;
+}
