@@ -42,7 +42,6 @@ bookshop.viewModel = (function () {
             },
             function (data) {
                 addBookToDom($bookTitle, $bookAuthor, $bookISBN, data.objectId, viewModel);
-                console.log($bookTitle);
                 $('#add-book-title').val('');
                 $('#add-book-author').val('');
                 $('#add-book-isbn').val('');
@@ -67,21 +66,25 @@ bookshop.viewModel = (function () {
     };
 
     ViewModel.prototype.editBook = function (bookId, title, author, isbn) {
-        var $bookTitle = $('#add-book-title').val();
-        var $bookAuthor = $('#add-book-author').val();
-        var $bookISBN = $('#add-book-isbn').val();
+        var $bookTitle = $('#add-book-title');
+        var $bookAuthor = $('#add-book-author');
+        var $bookISBN = $('#add-book-isbn');
 
         this.model.book.editBook(
             bookId,
             {
-                title: $bookTitle,
-                author: $bookAuthor,
-                isbn: $bookISBN
+                title: $($bookTitle).val(),
+                author: $($bookAuthor).val(),
+                isbn: $($bookISBN).val()
             },
             function () {
                 title.text($('#add-book-title').val());
                 author.text($('#add-book-author').val());
                 isbn.text($('#add-book-isbn').val());
+
+                $($bookTitle).val('');
+                $($bookAuthor).val('');
+                $($bookISBN).val('');
             },
             function (error) {
                 console.log(error.responseText);
