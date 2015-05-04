@@ -1,0 +1,20 @@
+<header id="main-header">
+    <h1 class="header-text">Bookshop</h1>
+</header>
+
+<form class="options-form" action="">
+    <header class="form-header">
+        <h2 class="form-header-title">Edit Book</h2>
+    </header>
+    <section class="form-main">
+        <input type="text" id="edit-book-title" class="option-input" placeholder="Title" value="{{title}}"/>
+        <input type="text" id="edit-book-author" class="option-input" placeholder="Author" value="{{author}}"/>
+        <input type="text" id="edit-book-isbn" class="option-input" placeholder="ISBN" value="{{isbn}}"/>
+    </section>
+    <footer class="form-footer">
+        <article class="form-footer-buttons">
+            <button class="confirm option-button" id="confirm-edit-book">Edit</button>
+            <a href="#/"><button class="cancel option-button" id="cancel-edit-book">Cancel</button></a>
+        </article>
+    </footer>
+</form>

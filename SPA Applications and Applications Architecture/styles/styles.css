@@ -1,0 +1,224 @@
+* {
+    transition: all .15s ease-in-out;
+}
+
+body {
+    background: #171717 url(../images/main-background.png) top left repeat;
+}
+
+#main-wrapper {
+    background: #E5E5E5;
+    overflow: hidden;
+    padding-bottom: 1em;
+    box-shadow: 0 0 20px rgba(0,0,0,.75);
+}
+
+#main-header {
+    background-image: linear-gradient(to bottom,#292c2f 0,#191c1f 100%);
+    text-shadow: 1px 1px 3px rgba(0,0,0,.75);
+    box-shadow: inset 0 0 0 1px rgba(31,31,31,.66),0 0 10px rgba(0,0,0,.75),0 0 10px rgba(0,0,0,.75);
+    font-size: 1.1em;
+    text-align: left;
+    white-space: nowrap;
+    background-color: #212427;
+}
+
+.header-text {
+    color: #E5E5E5;
+    text-align: center;
+    padding: .7% 0;
+}
+
+#book-table {
+    margin: 0 auto;
+    color: #000;
+    box-shadow: inset 0 0 0 1px rgba(31,31,31,.66),0 0 10px rgba(0,0,0,.75),0 0 10px rgba(0,0,0,.75);
+    margin-top: 4%;
+}
+
+#table-head > tr th {
+    background-color: #659821;
+    font-size: 26px;
+}
+
+#table-body > tr th {
+    font-weight: 500 !important;
+}
+
+table, tr, td, th {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+#table-body tr{
+    font-size: 17px;
+}
+
+td, th {
+    padding: 15px 40px;
+}
+
+.delete-button, .edit-button {
+    width: 36%;
+    padding: 2.4% 0;
+    left: 5%;
+    cursor: pointer;
+}
+
+.buttons-cell {
+    padding: 0;
+    text-align: left;
+}
+
+.delete-button {
+    margin-left: 10%;
+    background-color: #c63231;
+    color: #f0f0f0;
+    border: 1px solid #892322;
+}
+
+.delete-button:hover {
+    background-color: #bb302f;
+    border: 1px solid #5c1817;
+}
+
+.edit-button {
+    margin-left: 5%;
+    background-color: #2e3337;
+    color: #f0f0f0;
+    border: 1px solid #111417;
+}
+
+.edit-button:hover {
+    background-color: #111417;
+    border: 1px solid #090a0c;
+}
+
+/*#add-form{*/
+    /*margin: 0 auto;*/
+    /*margin-top: 2%;*/
+    /*text-align: center;*/
+    /*background: #171717 url(../images/main-background.png) top left repeat;*/
+    /*width: 25%;*/
+    /*padding: 1% 0;*/
+    /*border: 1px solid #000;*/
+    /*border-radius: 5px;*/
+/*}*/
+
+/*#add-form-input {*/
+    /*height: 18px;*/
+/*}*/
+
+.add-book-button {
+    width: 17%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: .8% 0;
+    display: block;
+    background: #171717 url(../images/main-background.png) top left repeat;
+    color: #E5E5E5;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.add-book-button:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+#edit-box {
+    visibility: visible;
+    display: none;
+    height: auto !important;
+}
+
+.add-form-button {
+    display: block;
+    margin-top: 3%;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 1.3% 0;
+    text-align: center;
+}
+
+.add-form-button::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.options-form {
+    width: 30%;
+    background-color: #EEE;
+    margin: 0 auto;
+    border: 2px solid #1E2124;
+    border-radius: 5px;
+}
+
+.form-header {
+    margin: 0 auto;
+    background-color: #659821;
+    border-radius: 2px;
+}
+
+.form-header-title {
+    color: #000;
+    font-weight: 900;
+    text-align: center;
+    padding: 3% 0;
+    margin-top: 0;
+}
+
+.option-input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+    margin-bottom: 2%;
+    padding: 2% .7%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.option-input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-footer {
+    border-top: 1px solid #b8b8b8;
+    width: 97%;
+    margin: 5% auto;
+}
+
+.form-footer-buttons {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4%;
+    width: 45%;
+    text-align: center;
+}
+
+.option-button {
+    padding: 5% 10%;
+    background: none;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 3%;
+    font-weight: 700;
+}
+
+.option-button:hover {
+    background-color: #73A137;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}

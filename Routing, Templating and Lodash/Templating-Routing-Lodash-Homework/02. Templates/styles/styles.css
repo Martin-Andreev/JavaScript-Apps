@@ -1,0 +1,20 @@
+table {
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 40%;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1.5%;
+}
+
+th {
+    background-color: #484848;
+    color: white;
+}
+
+td {
+    background-color: #beffb3;
+}

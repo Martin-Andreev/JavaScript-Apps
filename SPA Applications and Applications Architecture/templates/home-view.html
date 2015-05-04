@@ -1,0 +1,29 @@
+<header id="main-header">
+    <h1 class="header-text">Welcome to our Bookshop</h1>
+</header>
+<section id="body-section">
+    <table id="book-table">
+        <thead id="table-head">
+        <tr>
+            <th class="header-content">Title</th>
+            <th class="header-content">Author</th>
+            <th class="header-content">ISBN</th>
+            <th class="header-content">Options</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        {{#results}}
+        <tr>
+            <th>{{title}}</th>
+            <th>{{author}}</th>
+            <th>{{isbn}}</th>
+            <th class="buttons-cell">
+                <button class="delete-button" data-id="{{objectId}}">Delete</button>
+                <a href="#/Edit-book"><button class="edit-button" data-id="{{objectId}}">Edit</button></a>
+            </th>
+        </tr>
+        {{/results}}
+        </tbody>
+    </table>
+    <a href="#/Add-book"><button class="add-book-button">Add Book</button></a>
+</section>

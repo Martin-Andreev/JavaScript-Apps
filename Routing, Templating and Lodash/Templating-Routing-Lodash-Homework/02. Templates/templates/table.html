@@ -1,0 +1,19 @@
+<table>
+    <thead>
+    <tr>
+        <th>{{headers.nameColumn}}</th>
+        <th>{{headers.jobColumn}}</th>
+        <th>{{headers.websiteColumn}}</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{#people}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{jobTitle}}</td>
+            <td>{{website}}</td>
+        </tr>
+        {{/people}}
+    </tbody>
+</table>
+
